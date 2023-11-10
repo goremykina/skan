@@ -1,0 +1,30 @@
+.checkbox-wrapper input[type="checkbox"]
+  appearance: none
+  width: 1.25rem
+  height: 1.25rem
+  border: 1px solid #000
+  outline: none
+  cursor: pointer
+
+.checkbox-content
+  display: flex
+  gap: 20px
+  align-items: center
+
+input.checked
+  background-color: white
+  position: relative
+
+input.checked::before
+  content: "\2714"
+  font-size: 0.875rem
+  color: #7FFF00
+  position: absolute
+  margin: auto
+  left: 3px
+
+.unchecked
+  opacity: 0.4
+
+.selected
+  opacity: 1
