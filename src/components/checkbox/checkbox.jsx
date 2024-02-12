@@ -3,7 +3,7 @@ import { forwardRef, useState } from "react";
 import PropTypes from "prop-types";
 
 CheckboxInternal.propTypes = {
-    label: PropTypes.string,
+    label: PropTypes.string
 }
 function CheckboxInternal({ label, ...props }, ref) {
     const [isChecked, setIsChecked] = useState(false);

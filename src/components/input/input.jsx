@@ -15,9 +15,10 @@ Input.propTypes = {
     min: PropTypes.number,
 }
 
-export default function Input ({ className,  labelClassName, min, placeholder, type, errors, name, labelInfo, register, validationSchema}) {
+export default function Input ({ className, labelClassName, min, placeholder, type, errors, name, labelInfo, register, validationSchema }) {
+
     return (
-        <div className='search_field'>
+        <div className='input_wrapper'>
             <label htmlFor={name} className={labelClassName}>
                 {labelInfo}
             </label>

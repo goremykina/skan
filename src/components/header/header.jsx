@@ -4,8 +4,6 @@ import Line from '../../icons/line.svg'
 import { Link } from "react-router-dom";
 import AuthorizedUser from "./components/authorized-user.jsx";
 
-
-
 export default function Header( ) {
 
     return (
@@ -17,16 +15,7 @@ export default function Header( ) {
                 <h3 className='menu_h'>FAQ</h3>
             </div>
             <div className='autoization'>
-                {/*{ authorization ? <AuthorizedUser showField={true}/>*/}
-                {/*    : ( <>*/}
-                {/*        <h3 className='autoization_h'>Зарегистрироваться</h3>*/}
-                {/*        <Line />*/}
-                {/*        <Link className='header_button' to='/authorization'>Войти</Link>*/}
-                {/*    </>)*/}
-                {/*}*/}
-
                 <AuthorizedUser/>
-
                 <>
                 <h3 className='autoization_h'>Зарегистрироваться</h3>
                 <Line />
